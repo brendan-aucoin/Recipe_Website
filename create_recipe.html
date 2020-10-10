@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <meta name="author" content="Brendan Aucoin">
+        <meta name="description" content="Add Recipe">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0" /> 
+        <title>Add Recipe</title>
+        <link rel="stylesheet" href="css/create_recipe_styles.css">
+        <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script defer src = "js/insert_recipe_script.js"></script>
+    </head>
+
+    <body>
+        <!-- the menu bar -->
+        <div id = "menu-bar-temp"></div>
+        
+        <!-- recipe container -->
+        <div class = "recipe-container">
+            <!-- the ingredients list (the one on the left) -->
+            <div class="ingredients-list-container">
+                <h2 id = "ingredients-title">Ingredients</h2>
+
+                <!-- the container holding all the text fields and remove buttons -->
+                <!-- all done by javascript -->
+                <div id="insert-ingredients-container"></div>
+
+                <!-- the plus button and everything that you need after the text fields of ingredients -->
+               <div class="add-ingredient-button-container">
+                   <button id = "add-ingredient-button"><i class="fa fa-plus" aria-hidden="true"></i></button>
+               </div>
+
+            </div>
+
+            <div class="instructions-list-container">
+                <h2 id = "ingredients-title">Instructions</h2>
+                <!-- done by js.  its where all the instruction containers go -->
+                <div id="insert-instructions-container"></div>
+
+                <div class="add-instructions-button-container">
+                    <button id="add-instruction-button"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                </div>
+            </div>
+        </div>
+        <!-- end of recipe container -->
+        <div id="info-container">
+            <!-- for the tags -->
+            <div id="tag-container">
+                <h2>Tags</h2>
+                <div id = "tag-grid">
+                    <div><label for = "tag1" class = "tag-label">Vegan</label><input type = "checkbox" class = "tag" id = "tag1"> </input></div>
+                    <div><label for = "tag2" class = "tag-label">Vegetarian</label><input type = "checkbox" class = "tag" id = "tag2"> </input></div>
+                    <div><label for = "tag3" class = "tag-label">Baked Goods</label><input type = "checkbox" class = "tag" id = "tag3"> </input></div>
+                    <div><label for = "tag4" class = "tag-label">Meat</label><input type = "checkbox" class = "tag" id = "tag4"> </input></div>
+                    <div><label for = "tag5" class = "tag-label">Breakfast</label><input type = "checkbox" class = "tag" id = "tag5"> </input></div>
+                    <div><label for = "tag6" class = "tag-label">Dinner</label><input type = "checkbox" class = "tag" id = "tag6"> </input></div>
+                    <div><label for = "tag7" class = "tag-label">Curry</label><input type = "checkbox" class = "tag" id = "tag7"> </input></div>
+                    <div><label for = "tag8" class = "tag-label">Easy</label><input type = "checkbox" class = "tag" id = "tag8"> </input></div>
+                    <div><label for = "tag9" class = "tag-label">Sandwich</label><input type = "checkbox" class = "tag" id = "tag9"> </input></div>
+                    <div><label for = "tag10" class = "tag-label">Gluten Free</label><input type = "checkbox" class = "tag" id = "tag10"> </input></div>
+                    <div><label for = "tag11" class = "tag-label">Sauce</label><input type = "checkbox" class = "tag" id = "tag11"> </input></div>
+                </div>
+            </div>
+
+            <div id="time-container">
+                <h2>Time</h2>
+                <div id="time-grid">
+                    <div><input class = "time-field" id = "prep-time-field" type = "text" placeholder = "Prep Time" /></div>
+                    <div><input class = "time-field" id = "cook-time-field" type = "text" placeholder = "Cook Time" /></div>
+                    <div><input class = "time-field" id = "servings-field" type = "text" placeholder = "Servings" /></div>
+                    <div><input class = "time-field" id = "calories-field" type = "text" placeholder = "Calories" /></div>
+                </div>
+            </div>
+        </div>
+        <!-- end of info container -->
+        <div id="upload-container">
+            <div id="name-container">
+                <label for = "name-field">Name:</label><input id = "name-field" type = "text" />
+            </div>
+            <div id="upload-button-container">
+                <button id = "upload-button">Upload</button>
+            </div>
+        </div>
+    </body>
+</html>

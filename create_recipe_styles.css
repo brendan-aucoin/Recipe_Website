@@ -1,0 +1,177 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+#menu-bar-temp{
+    height:70px;
+    background-color: red;
+
+}
+
+.recipe-container, #info-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+h2,h1{
+    padding: 1rem 1rem;
+    font-size:2rem;
+    text-align:center;
+}
+
+/* the ingredients */
+.ingredients-list-container{
+    position:relative;
+    border:1px solid blue;
+}
+
+#insert-ingredients-container{
+   display:flex;
+   flex-direction:column;
+   text-align:center;
+}
+
+.delete-ingredient-button, #add-ingredient-button, .delete-instruction-button, #add-instruction-button{
+    padding: 0.5rem 1rem;
+    border-color: #e7e7e7;
+    color: black;
+}
+.delete-ingredient-button i, #add-ingredient-button i, .delete-instruction-button i, #add-instruction-button i{
+    font-size:1rem;
+}
+.ingredient-container{
+    padding: 0.5rem 1rem;
+    margin-top:0.5rem;
+}
+
+.delete-ingredient-button, .delete-instruction-button{
+    margin-right: 1rem;
+}
+
+.delete-ingredient-button:hover, #add-ingredient-button:hover, .delete-instruction-button:hover, #add-instruction-button:hover{
+    cursor:pointer;
+    background-color: #e7e7e7;
+    box-shadow: 0px 0px 2px #8e999e;
+}
+
+.ingredient-field{
+    font-size:1rem;
+    padding:0.5rem 0.5rem;
+    width:50%
+}
+
+.ingredient-field:focus{
+    box-shadow: 0 0 5px #719ECE;
+}
+
+
+.add-ingredient-button-container, .add-instructions-button-container{
+    margin-top:1.5rem;
+}
+
+#add-ingredient-button,#add-instruction-button{
+    margin-left:75%;
+}
+
+.instructions-list-container{
+    position:relative;
+    border:1px solid blue;
+}
+
+#insert-instructions-container{
+    display:flex;
+    flex-direction:column;
+    text-align:center;   
+}
+
+.instruction-container{
+    padding: 0.5rem 1rem;
+    margin-top:0.5rem;
+    display:block;
+    flex-wrap:wrap;
+    align-items:flex-start;
+    justify-content:center;
+    
+}
+
+.instruction-area{
+    resize:none;
+    width:40%;
+    height:150px;
+    flex: 0 auto;
+}
+
+.instruction-area:focus{
+    box-shadow: 0 0 5px #719ECE;
+}
+
+.delete-instruction-button{
+    flex: 0 0;
+    align-self:center;
+    margin-left:1rem;
+}
+
+#tag-container{
+    text-align:center;
+}
+#tag-grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(25%,1fr));
+    justify-items: center;
+    margin-top:2rem;
+    grid-gap: 2rem 0rem;
+}
+.tag{
+    transform: scale(1.75);
+    background-color:red;
+}
+
+.tag:hover{
+    cursor:pointer;
+    background-color:#ccc;
+}
+
+.tag-label{
+    margin-right:0.5rem;
+    cursor:pointer;
+}
+
+#time-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:2rem 0rem;
+    justify-items:center;
+    margin-top:2rem;
+}
+
+.time-field{
+    font-size:1rem;
+}
+
+#upload-container{
+    display:flex;
+    flex-direction:column;
+    margin-top:2rem;
+}
+
+#name-container{
+    margin-bottom:2rem;
+}
+#name-container label{
+    font-size:2rem;
+    margin-right:0.75rem;
+}
+#name-field{
+    font-size:2rem;
+}
+
+#upload-button{
+    width:100%;
+    font-size:3rem;
+    background-color:#00FF80;
+}
+#upload-button:hover{
+    cursor:pointer;
+    background-color:#00CC66
+}
